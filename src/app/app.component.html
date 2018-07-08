@@ -1,0 +1,54 @@
+<aside id="left-panel" class="left-panel">
+    <nav class="navbar navbar-expand-sm navbar-default">
+
+        <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="./">Tube Mate</a>
+            <a class="navbar-brand hidden" href="./">TM</a>
+        </div>
+
+        <div id="main-menu" class="main-menu collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a routerLink="Home">
+                        <i class="menu-icon fa fa-home"></i>Home </a>
+                </li>
+                <li>
+                    <a routerLink="Add">
+                        <i class="menu-icon fa fa-plus"></i>Add Video </a>
+                </li>
+                <li>
+                    <a routerLink="View">
+                        <i class="menu-icon fa fa-camera"></i>View Videos </a>
+                </li>
+                <li>
+                        <a routerLink="Update">
+                            <i class="menu-icon fa fa-edit"></i>Update Videos </a>
+                    </li>
+
+            </ul>
+        </div>
+    </nav>
+</aside>
+<div id="right-panel" class="right-panel">
+
+    <header id="header" class="header">
+
+        <div class="header-menu">
+
+            <div class="col-sm-12">
+                <a id="menuToggle" class="menutoggle pull-left">
+                    <i class="fa fa fa-tasks"></i>
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </header>
+    <router-outlet></router-outlet>
+</div>

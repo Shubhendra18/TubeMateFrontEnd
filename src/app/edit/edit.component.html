@@ -1,0 +1,67 @@
+<div id="right-panel" class="right-panel">
+
+  <div class="breadcrumbs">
+    <div class="col-sm-4">
+      <div class="page-header float-left">
+        <div class="page-title">
+          <h1>Dashboard</h1>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="page-header float-right">
+        <div class="page-title">
+          <ol class="breadcrumb text-right">
+            <li>TubeMate</li>
+            <li class="active">Update</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content mt-3">
+    <div class="animated fadeIn">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card border-dark">
+            <div class="card-header bg-dark">
+
+              <h5 class="text-white">
+                <i class="fa fa-refresh"></i>&nbsp;Update Video Details</h5>
+            </div>
+            <div class="card-body">
+              <form #FormData="ngForm" (ngSubmit)="update(FormData.value)">
+                <div class="form-group">
+                  <label>Video Name</label>
+                  <input type="text" id="_id" style="display: none;" name="_id" class="form-control" ngModel={{_id}} />
+                  <input type="text" id="Title" name="Title" class="form-control" ngModel={{Title}} />
+                </div>
+                <div class="form-group">
+                  <label>Video Path</label>
+                  <input type="text" id="Path" name="Path" class="form-control" ngModel={{Path}}/>
+                </div>
+                <div class="form-group">
+                  <label>Video Description</label>
+                  <textarea id="Des" name="Des" class="form-control" ngModel={{Des}}></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Update Details" class="btn btn-dark" />
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- .row -->
+    </div>
+    <!-- .animated -->
+  </div>
+  <div style="width:1100px">
+    <p class="text-center">All Right Reserved &copy;2018 Digipodium</p>
+  </div>
+
+</div>
